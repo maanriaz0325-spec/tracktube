@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Roboto:wght@400;500;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-roboto: "Roboto", sans-serif;
+  --font-serif: "Lora", serif;
+}
+
+@layer components {
+  .card-style {
+    @apply bg-white border border-slate-200 rounded-xl p-6 shadow-sm transition-all hover:shadow-md;
+  }
+
+  .jetbrains-number {
+    @apply font-sans;
+  }
+
+  .btn-primary {
+    @apply bg-red-600 text-white font-bold py-3 px-8 rounded-lg shadow-md shadow-red-100 hover:bg-red-700 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-900 text-white font-bold py-3 px-8 rounded-lg shadow-sm hover:bg-slate-800 transition-all;
+  }
+
+  .audit-badge {
+    @apply bg-red-50 text-red-700 text-[10px] font-bold px-2 py-1 rounded border border-red-100 uppercase;
+  }
+
+  .verified-badge {
+    @apply bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2 py-1 rounded border border-emerald-100 uppercase;
+  }
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased overflow-x-hidden;
+}
