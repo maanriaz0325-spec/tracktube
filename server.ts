@@ -5,11 +5,11 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-async function startServer() {
-  const app = express();
-  const PORT = 3000;
+const app = express();
+app.use(express.json());
 
-  app.use(express.json());
+async function startServer() {
+  const PORT = 3000;
 
   // API Proxy for YouTube
   app.get("/api/youtube", async (req, res) => {
