@@ -695,7 +695,6 @@ export default function App() {
         <div className="flex items-center gap-4">
           <div>System Status: <span className="text-emerald-500">Live Strategic Relay Operational</span> • v3.5.0</div>
         </div>
-        <div className="hidden sm:block">&copy; 2026 TRACKTUBE STRATEGIC ENGINE</div>
       </footer>
     </div>
   );
