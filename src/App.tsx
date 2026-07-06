@@ -405,7 +405,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+    <div className="flex flex-col bg-slate-50 text-slate-900 font-sans">
       <main className="flex-1 p-6 flex flex-col gap-6 max-w-[1200px] mx-auto w-full">
         <AnimatePresence mode="wait">
           {!data && !loading ? (
@@ -414,7 +414,7 @@ export default function App() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="flex-1 flex flex-col items-center justify-center py-12 max-w-2xl mx-auto w-full"
+              className="flex-1 flex flex-col items-center justify-start pt-8 pb-12 max-w-2xl mx-auto w-full"
             >
               <div className="flex flex-col gap-4 mb-8 text-center">
                 <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto shadow-xl shadow-red-100">
