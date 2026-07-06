@@ -693,7 +693,6 @@ export default function App() {
 
       <footer className="h-12 bg-white border-t border-slate-200 flex items-center justify-between px-8 shrink-0 text-[10px] text-slate-400 font-bold uppercase tracking-wider relative z-10">
         <div className="flex items-center gap-4">
-          <div>System Status: <span className="text-emerald-500">Live Strategic Relay Operational</span> • v3.5.0</div>
         </div>
       </footer>
     </div>
